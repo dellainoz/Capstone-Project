@@ -21,31 +21,42 @@
   src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'), url(https://fonts.gstatic.com/s/titilliumweb/v5/anMUvcNT0H1YN4FII8wpr8hG3LOB74UqS1hPmWaAxzQ.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-
+/* My rules */
 html {
   font-size: 16px;
   font-family: 'Titillium Web';
 }
 
+body {
+  line-height: 1.2;
+}
+
+h1 {
+  font-family: 'Titillium Web Bold';
+  font-size: 2.5rem;
+}
+
 /* Header */
-.site-container {
-  margin-left: 1.5rem;
-}
-
 header {
-  height: 4rem;
+  height: 2rem;
   background-color: #E8C547;
+  padding: 1rem 1.5rem;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer,
 .logo {
   display: flex;
-  float: left;
-  justify-content: space-around;
   align-items: center;
 }
 
 .logo img {
-  height: 2.5rem;
+  height: 2rem;
 }
 
 .logo h1 {
@@ -76,11 +87,223 @@ a {
   padding: 0 1rem;
 }
 
+a:hover,
+nav a:hover {
+  color: #F06543;
+  transition: 300ms ease-in 250ms;
+}
+
 .infographics-menu {
   display: none;
 }
 
+/* Intro */
+.banner {
+  background-color: #FFFFFF;
+}
 
+.main-image {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+}
+
+.main-image img,
+.main-image video {
+  width: 100%;
+}
+
+.banner-text {
+  padding: 0 1.5rem;
+  max-width: 40%;
+}
+
+.banner h1 {
+  color: #508070;
+}
+
+.banner-text p {
+  font-size: 1.5rem;
+}
+
+.button {
+  margin-top: 1rem;
+  border: 2px solid #508070;
+  border-radius: 8px;
+  background-color: #508070;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #F06543;
+  box-shadow: 0 12px 16px 0 rgba(200,0,90,0.24);
+}
+
+.button:visited {
+  background-color: #F06543;
+  opacity: 0.6;
+}
+
+.button a {
+  color: #FFFFFF;
+}
+
+/* Information section */
+
+.information {
+  background-color: #F06543;
+  flex-direction: row;
+}
+
+.description {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.description h1,
+.description p,
+.description h6 {
+  color: #FFFFFF;
+  padding-left: 1.5rem;
+  width: 100%;
+}
+
+.description h1,
+.description p {
+  padding-bottom: 1.5rem;
+}
+
+.description h6 {
+  font-size: 0.9rem;
+}
+
+/* Sidebar section */
+.sidebar {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.small-image {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.small-image img{
+  max-width: 35%;
+  max-height: auto;
+}
+
+.caption-text {
+  color: #FFFFFF;
+  width: 65%;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.caption-text h2 {
+  font-size: 1.5rem;
+}
+
+.caption-text h2,
+.caption-text p {
+  padding-bottom: 0.5rem;
+}
+
+.caption-text a {
+  font-size: 1.1rem;
+  padding: 0 0;
+  color: #011936;
+}
+
+.caption-text a:hover {
+  color: #FFFFFF;
+  transition: 150ms linear 200ms;
+}
+
+/* Learning section */
+.learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4.5rem;
+  background-color: white;
+}
+
+.learning h1 {
+  color: #011936;
+  padding-bottom: 2rem;
+}
+
+.courses {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #011936;
+  max-width: 30%;
+  margin-bottom: 2rem;
+  background-color: GhostWhite;
+}
+.course img {
+  height: auto;
+  width: 100%;
+}
+
+.caption-text h3 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  color: #F06543;
+}
+
+.caption-text h3,
+.caption-text p {
+  padding-bottom: 0.5rem;
+}
+
+#Blue p {
+  color: #011936;
+}
+
+.thesis {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #08415C;
+}
+
+.thesis h1 {
+  color: #FFFFFF;
+}
+
+footer {
+  padding: 1rem 1.5rem;
+  color: #011936;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #011936;
+  font-size: 1rem;
+}
+
+nav a:visited {
+  opacity: 0.2;
+}
 @media only screen and (max-width 470px){
 .text-menu {
   display: none;
@@ -88,5 +311,4 @@ a {
 
 .infographics-menu {
   display: flex;
-}
 }
