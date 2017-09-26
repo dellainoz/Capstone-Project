@@ -157,6 +157,7 @@ nav a:hover {
 .information {
   background-color: #F06543;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 .description {
@@ -168,7 +169,6 @@ nav a:hover {
 .description p,
 .description h6 {
   color: #FFFFFF;
-  padding-left: 1.5rem;
   width: 100%;
 }
 
@@ -184,9 +184,9 @@ nav a:hover {
 /* Sidebar section */
 .sidebar {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   width: 40%;
+  padding-top: 1rem;
 }
 
 .small-image {
@@ -247,7 +247,7 @@ section mobile {
 
 .courses {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -260,6 +260,7 @@ section mobile {
   max-width: 30%;
   margin-bottom: 2rem;
   background-color: GhostWhite;
+
 }
 .course img {
   height: auto;
@@ -272,17 +273,26 @@ section mobile {
   color: #F06543;
 }
 
-.caption-text h3,
-.caption-text p {
-  padding-bottom: 0.5rem;
+h4 {
+  padding: 0.5rem 0;
 }
 
-#Blue p {
+#Blue {
+  text-align: left;
+  padding-right: 1.5rem;
+}
+
+#Blue p,
+#Blue h4 {
   color: #011936;
 }
 
 #thesis {
   background-color: #08415C;
+}
+
+#thesis .sidebar {
+  padding-top: 5rem;
 }
 
 #thesis h1 {
