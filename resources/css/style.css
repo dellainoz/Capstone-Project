@@ -93,7 +93,7 @@ nav a:hover {
   transition: 300ms ease-in 250ms;
 }
 
-.infographics-menu {
+.mobile {
   display: none;
 }
 
@@ -186,7 +186,7 @@ nav a:hover {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  max-width: 40%;
+  width: 40%;
 }
 
 .small-image {
@@ -202,7 +202,6 @@ nav a:hover {
 
 .caption-text {
   color: #FFFFFF;
-  width: 65%;
   padding-left: 1rem;
   text-align: center;
 }
@@ -228,6 +227,10 @@ nav a:hover {
 }
 
 /* Learning section */
+section mobile {
+  display: none;
+}
+
 .learning {
   display: flex;
   flex-direction: column;
@@ -278,15 +281,11 @@ nav a:hover {
   color: #011936;
 }
 
-.thesis {
-  padding: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#thesis {
   background-color: #08415C;
 }
 
-.thesis h1 {
+#thesis h1 {
   color: #FFFFFF;
 }
 
@@ -304,11 +303,127 @@ nav a {
 nav a:visited {
   opacity: 0.2;
 }
-@media only screen and (max-width 470px){
-.text-menu {
+
+@media only screen and (max-width: 470px){
+
+.container {
+  margin: 0 auto;
+  flex-direction: column;
+}
+.desktop {
   display: none;
 }
 
-.infographics-menu {
+.mobile {
   display: flex;
+}
+
+/* NAV BAR */
+nav {
+  margin: 0 auto;
+  align-items: center;
+  float: none;
+  justify-content: space-between;
+}
+
+.mobile img {
+justify-content: space-between;
+}
+
+.main-image {
+  padding: 0rem;
+  max-width: 100%;
+}
+.banner-text {
+  padding: 2rem 1rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+.banner-text h1 {
+  padding-bottom: 2rem;
+}
+
+.banner-text p {
+  padding-bottom: 1.5rem;
+}
+
+.button {
+  margin: 1.5rem 0 2rem;
+}
+
+/* Information section */
+.sidebar {
+  display: flex;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.small-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-image img{
+  max-width: 100%;
+  max-height: auto;
+}
+
+.caption-text {
+  width: 100%;
+  padding-left: 2rem;
+  text-align: left;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+}
+
+/* Learning section */
+.learning {
+  padding: 1rem 0rem;
+}
+
+.learning h1 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: #508070;
+}
+
+.learning a {
+  color: #011936;
+  font-size: 1.5rem;
+  font-family: 'Titillium Web';
+  width: 100%;
+}
+
+.learning a:visited {
+  color: #011936;
+}
+
+ul {
+  margin-bottom: 2rem;
+}
+
+ul li {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+ul li:nth-child(2n + 1) {
+  border: 2px solid #011936;
+}
+
+ul li:nth-child(2n + 2) {
+  background-color: GhostWhite;
+}
+
+/* Thesis section */
+#thesis .sidebar {
+  display: none;
+}
+#thesis h1 {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+}
+
+footer {
+  padding: 2.5rem 0 1rem 1rem;
 }
